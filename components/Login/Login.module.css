@@ -1,0 +1,146 @@
+
+.loginWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100vw;
+  text-align: center;
+}
+.loginInput {
+  width: 472px;
+  height: 45px;
+  background: #e6f8ff;
+  border: 1px solid #4AB449;
+  border-radius: 5px;
+  padding:10px;
+}
+.loginInput::placeholder{
+  color:black !important;
+}
+.loginBtn {
+  width: 323px;
+  height: 45px;
+  background: #4ab449;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: white;
+  margin: 0 auto;
+  transition:all .4s ease-in-out;
+}
+.loginBtn:hover {
+  background:#26ade2;
+}
+.inputLabel{
+  text-align: left;
+  position: absolute;
+  left: 0;
+}
+.devided {
+  width: 206px;
+  height: 0px;
+  border: 2px solid #b0b8ba;
+}
+.loginBtn2 {
+  width: 323px;
+  height: 45px;
+  background: #26ade2;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  transition:all .5s ease-in-out;
+}
+.loginBtn2:hover{
+  background:#4AB449;
+}
+.loginBtn3 {
+  width: 323px;
+  height: 45px;
+  background: #ffffff;
+  border: 1px solid rgba(74, 180, 73, 0.5);
+  box-shadow: 0px 2px 4px rgba(25, 171, 227, 0.3);
+  border-radius: 5px;
+  color: #4ab449;
+  font-size: 14px;
+  transition: all .4s ease-in-out;
+}
+.loginBtn3:hover {
+  background:#4AB449;
+  color:white;
+}
+.loginWithProvider {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.ShowIcon {
+  position: absolute;
+  right: 15px;
+  top: 39px;
+  font-size: 18px;
+  color: #4AB449;
+}
+.circle button{
+  background:none;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .loginWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .loginWithProvider {
+    text-align: left;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  .circle {
+    /* position: absolute; */
+    left: 0 !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .loginWrap {
+    width: 100%;
+  }
+  .loginInput {
+    width: 400px;
+  }
+ 
+ 
+
+  .devided {
+    width: 160px;
+    margin: 0 auto;
+    height: 0px;
+    border: 2px solid #b0b8ba;
+  }
+  .loginInput {
+    width: 368px;
+  }
+  .ShowIcon {
+    right: 33px;
+    top: 41px;
+  }
+ 
+  .loginBtn3 {
+    left: 51px;
+  }
+
+
+
+}
+@media only screen and (max-width: 400px) {
+  .loginInput {
+    width: 350px;
+  }
+
+  .loginBtn3 {
+    left: 25px;
+  }
+  .devided {
+    width: 150px;
+  }
+}
