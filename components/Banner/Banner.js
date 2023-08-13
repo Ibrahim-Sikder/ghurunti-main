@@ -495,8 +495,8 @@ const Banner = ({ setResults }) => {
                
               </li>
               </ActiveLink>
-              <ActiveLink href="/flight">
-              <li>
+              <ActiveLink  href="/flight">
+              <li className={style.activeLink}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={40}
@@ -792,7 +792,7 @@ const Banner = ({ setResults }) => {
 
                       <dialog id="my_modal_3" className="modal">
                         <form method="dialog" className="modal-box">
-                          <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                          <button className={style.modalCloseBtn}>
                             ✕
                           </button>
                           <div>
@@ -953,7 +953,7 @@ const Banner = ({ setResults }) => {
 
                       <dialog id="my_modal_3" className="modal">
                         <form method="dialog" className="modal-box">
-                          <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                          <button className={style.modalCloseBtn}>
                             ✕
                           </button>
                           <div>
