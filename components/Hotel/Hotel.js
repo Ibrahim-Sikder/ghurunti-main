@@ -25,6 +25,7 @@ import Slider from "react-slick";
 
 import { FreeMode, Pagination, Autoplay, Navigation, Mousewheel } from "swiper";
 import { useState } from "react";
+import ActiveLink from "../Banner/ActiveLink";
 
 const Hotel = () => {
   const [activeToggleMenu, setActiveToggleMenu] = useState(false);
@@ -117,10 +118,8 @@ const Hotel = () => {
           {/* menubar */}
           <div>
             <ul className={style.menu}>
-              <li
-              onClick={handleActiveMenu}
-              className={activeToggleMenu ? `${style.activeMenu}` : `${style.menuuu}`}
-              >
+              <ActiveLink href='/hajjUmra'>
+              <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={35}
@@ -162,6 +161,8 @@ const Hotel = () => {
                   <p className="ml-3">Hajj & Umrah</p>
                 </Link>
               </li>
+              </ActiveLink>
+              <ActiveLink href='/flight'>
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -193,6 +194,8 @@ const Hotel = () => {
                   <p className="ml-3">Flight</p>
                 </Link>
               </li>
+              </ActiveLink>
+             
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

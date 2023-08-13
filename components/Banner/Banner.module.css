@@ -711,6 +711,7 @@ font-size:14px;
   z-index: 999 !important;
 }
 
+
 @media only screen and (max-width: 1024px) {
   .heroBoxMain {
     width: 98%;

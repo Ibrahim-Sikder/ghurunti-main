@@ -366,6 +366,7 @@ const HeroBox = () => {
   const handleaddclick = () => {
     setinputList([...inputList, { flyingFrom: '', flyingTo: '', date: '' }]);
   }
+ 
 
 
 

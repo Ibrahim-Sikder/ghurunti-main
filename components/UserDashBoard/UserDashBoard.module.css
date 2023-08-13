@@ -255,7 +255,9 @@ z-index: 9999999999 !important;
 
 
 
-
+.activeNave{
+  background:red;
+}
 
 /* dashboard left side styling  */
 .dashBoardLeftSide {
