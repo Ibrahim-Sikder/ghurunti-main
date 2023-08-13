@@ -10,6 +10,7 @@
      background-repeat:no-repeat;
      max-width:100vw !important;
   
+  
    }
    
    .bannerWrap h2{
@@ -65,6 +66,7 @@
     border: 1px solid #fff;
   }
   
+
    .activeMenu{
     border-right:none;
     background:#19ABE3 !important;
@@ -170,16 +172,17 @@
 
    @media only screen and (max-width:1024px){
      .heroBoxMain{
-          width:95%;
+      width: 98%;
          
         }
         .bannerWrap h2 {
           text-align: center;
           padding-top: 12px;
-          padding-bottom: 29px
-      px
-      ;
+          padding-bottom: 29px;
       }
+      .visaBtn {
+        margin-top: 27px;
+    }
       .block{
           display: block;
         }
@@ -188,6 +191,11 @@
    
    
    @media only screen and (max-width:768px){
+    .bannerWrap{
+      height: 480px;
+   
+    }
+ 
      .bannerWrap h2{
        font-size:25px;
       }
@@ -195,28 +203,31 @@
        background:none;
        flex-wrap:wrap;
      }
-     .menu li{
-      margin-right: 55px;
-      margin-left: 55px;
-      margin-bottom: 36px;
-      z-index: 999 !important;
-      color: black;
+     .wrapMenu{
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+    .menu {
+      background: none;
+      flex-wrap: wrap;
+      margin-bottom: 44px;
+      padding-top: 40px;
+    }
+    .menu li {
+      height: 82%;
+      width: 100%;
+      border:none;
+  }
+  .lastChild {
+    border-right:none !important;
+  }
    
-     }
-     .menu li:nth-child(7){
-      margin-left:290px;
-   
-     }
      .heroBoxMain{
       width: 95%;
-    height: 400px;
+      height: 423px;
+      top: -18px;
       
      }
-   
-   .heroBoxMain{
-     background:none;
-     
-   }
    .searchIcon{
     font-size: 25px;
     top: 34%;
@@ -228,22 +239,23 @@
 
    @media only screen and (max-width:500px){
      .bannerWrap{
-      height:580px;
+      height: 630px;
      }
      .bannerWrap h2{
        text-align: center;
       }
-      .menu li{
-       margin-right:20px;
-       margin-left:30px;
-       margin-bottom:30px;
-       z-index: 999 !important;
-       color:black;
-   
-     }
-     .trainLi{
-       margin-left:140px !important;
-     }
+      .wrapMenu {
+        justify-content: space-between !important;
+        padding: 0px 30px;
+    }
+    .firstChild{
+      border-top-left-radius: 0px !important;
+      padding-left: 0px;
+    
+    }
+    .lastChild{
+      margin-left: 113px;
+    }
      .heroBoxBtn{
        padding:10px 28px;
        top: 326px;
@@ -252,10 +264,29 @@
    .bannerWrap h2 {
      margin-bottom: 15px;
    }
+   .visaPackajWrap {
+    display: block;
+    margin-top: -56px;
+}
   
+.visaPackaj {
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.heroBoxMain {
+  height: 559px;
+}
  
  .heroBoxMain {
   border-radius: 0px;
+}
+.visaBtn {
+  width: 354px;
+}
+.visaPackaj {
+  width: 354px;
+  height: 63px;
+  font-size: 14px;
 }
 
     
@@ -264,13 +295,10 @@
 
 }
 @media only screen and (max-width:400px){
-  .menu li {
-    margin-right: 15px;
-    margin-left: 15px;
+  .wrapMenu {
+    padding: 0px 6px;
 }
-.menu li:nth-child(7) {
-  margin-left: 114px !important;
-}
+
 
 .bannerWrap h2 {
   width: 85%;

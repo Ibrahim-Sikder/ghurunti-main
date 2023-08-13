@@ -38,7 +38,7 @@ const UserDashBoardLeft = () => {
 
 
 
-            <Accordion>
+            <Accordion className={style.bookingHistory}>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
@@ -129,7 +129,7 @@ const UserDashBoardLeft = () => {
             <div>
               <p className={style.showToolTip}><Replay5 className={style.icon} />
                 <Link href=''><div className={`${style.toolTip} ${style.mainToolTip}`}>
-                  <Accordion>
+                  <Accordion className={style.bookingHistory}>
                     <AccordionSummary
                       expandIcon={<ExpandMoreIcon />}
                       aria-controls="panel1a-content"

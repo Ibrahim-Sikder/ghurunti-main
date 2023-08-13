@@ -1,0 +1,44 @@
+.completedWrap{
+    width:100%;
+    margin:0 auto;
+}
+.informationHeading{
+    background: #19ABE3;
+    width: 309px;
+    padding: 3px 10px;
+    margin-bottom: 13px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.completed{
+    margin: 30px 50px;
+    background: #4AB449;
+    color: white;
+    padding: 30px;
+}
+.tableWrap tr{
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    font-size: 14px;
+
+}
+.tableWrap td{
+    padding: 10px 0px;
+   
+}
+.passengerInformation{
+    width:50%;
+}
+.passengerInfo{
+    text-align: left;
+}
+.passengerInfo th{
+
+}
+.passengerInfo tr{
+
+}
+.passengerInfo td{
+    font-size: 14px;
+    padding: 5px;
+}

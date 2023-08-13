@@ -64,6 +64,10 @@
 .icon {
   font-size: 22px !important;
 }
+.bookingHistory{
+  background:#4AB449 !important;
+  color:white !important;
+}
 
 /* admin dashboard right side styling  */
 
