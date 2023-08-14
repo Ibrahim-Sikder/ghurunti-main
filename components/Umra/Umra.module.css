@@ -120,14 +120,27 @@
   margin: 80px auto;
   padding: 0 28px;
 }
+.umraHead{
+  width: 645px;
+  margin: 0 auto;
+  text-align: center;
+}
 .singleHajj {
   width: 310px;
-  height: 630px;
+  height: 606px;
   background: #ffffff;
-  box-shadow: 2px 4px 16px rgba(74, 180, 73, 0.2);
+  box-shadow: #4AB449 0px 9px 28px, #19ABE3 0px 9px 8px;
   border-radius: 5px;
   padding: 10px;
   overflow: hidden;
+}
+.hajjContentWrap{
+  padding: 16px 2px;
+  font-size: 14px;
+}
+.hajjContentWrap h3{
+  font-size:18px;
+  font-weight: 500;
 }
 .umraHead p{
   color:black !important;
@@ -147,7 +160,7 @@
 }
 .singleHajjmiddl {
   width: 310px;
-  height: 630px;
+  height: 606px;
   background: #ffffff;
   box-shadow: 2px 4px 16px rgba(74, 180, 73, 0.2);
   border-radius: 5px;
@@ -159,34 +172,25 @@
   color: black !important;
 }
 .hajjBtn {
-  width: 160px;
-  height: 46px;
+  width: 150px;
+  height: 40px;
   background: #4ab449;
-  border-radius: 5px;
+  border-radius: 3px;
   color: white;
-  margin-left: 75px;
-  margin-top: 10px;
+  margin-left: 69px;
+  margin-top: 15px;
+  font-size: 14px;
 }
 .day {
-  width: 100px;
-  height: 40px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #092e3d;
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
   background: #19abe3;
-  padding: 10px;
-  overflow: hidden;
+  line-height: 30px;
   color: white;
-  margin-top: 20px;
+  border-radius: 5px;
 }
 .clock {
-  box-sizing: border-box;
   width: 350px;
   padding: 12px 20px;
   background: #ffffff;
@@ -195,9 +199,10 @@
   border-radius: 5px;
   display: flex;
   align-items: center;
+  background: #4AB449;
+  color: white;
 }
 .clock2 {
-  box-sizing: border-box;
   width: 350px;
   padding: 12px 20px;
   background: #ffffff;
@@ -207,6 +212,8 @@
   display: flex;
   align-items: center;
   margin: 0px 40px;
+  background: #4AB449;
+  color: white;
 }
 .rBtn {
   width: 236px;

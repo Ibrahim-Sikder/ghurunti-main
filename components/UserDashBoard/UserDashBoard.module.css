@@ -19,13 +19,9 @@
 }
 .rightSideBar {
   width: 100%;
-  /* background-image:url(../../public/assets/destination.jpeg); */
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
   background:fixed;
   height:auto;
-
   position: relative;
   background-image: url(/_next/static/media/banner.f7be9e77.png);
   background-size: cover;
@@ -182,16 +178,14 @@
 }
 
 .active {
-  
   background: #4AB449;
   display: flex;
-  padding-left: 10px;
+  padding-left: 0px;
   justify-content: space-between;
   transition: all 0.5s ease-in-out;
   position: fixed;
-  left: -175px;
+  left: -177px;
   z-index: 999 !important;
-
 }
 .iconsBarHide {
   display: none;
@@ -254,7 +248,7 @@ transition: all .5s cubic-bezier(0.11, -0.04, 0.96, 1.06);
 z-index: 9999999999 !important;
 }
 .tabLeft{
-  margin-left:247px !important;
+  margin-left: 307px !important;
 }
 
 

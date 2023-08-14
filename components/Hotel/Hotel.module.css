@@ -188,11 +188,12 @@
 }
 .tourTrending{
   background: #FFFFFF;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: #4AB449 0px 5px 10px, #19ABE3 0px 7px 7px;
   width: 260px !important;
   margin-right: 20px;
   height: 440px;
   text-align: center;
+  margin-bottom: 19px;
 
 
 }
@@ -252,7 +253,7 @@ transform:scale(1.5)
 
 @media only screen and (max-width: 1024px) {
   .heroBoxMain {
-    width: 100%;
+    width: 97.9%;
   }
   .package {
     left: 85px;
@@ -314,9 +315,7 @@ transform:scale(1.5)
 }
 
 .destination {
-  width: 1100px;
-  margin-left: 250px;
-  margin-bottom: 100px;
+  margin-bottom: 94px;
   height: auto;
 }
 .trendingHead {
@@ -404,7 +403,7 @@ transform:scale(1.5)
 @media only screen and (max-width: 1024px) {
   .destination {
     width: 100%;
-    margin-left: 0px;
+    margin-left: 37px;
   }
 
   .trending {
@@ -426,8 +425,8 @@ transform:scale(1.5)
 }
 @media only screen and (max-width: 768px) {
   .destination {
-    width: 100%x;
-    margin-left: 0px;
+    width: 100%;
+    margin-left: 58px;
   }
   .trending {
     height: 471px;
@@ -510,7 +509,8 @@ transform:scale(1.5)
 
   .destination {
     width: 100%;
-    margin-left: 0px;
+    margin-left: 13px;
+    text-align: center;
   }
   .trendingHead {
     width: 100%;

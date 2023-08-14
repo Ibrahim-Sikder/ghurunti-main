@@ -80,14 +80,7 @@ const Banner = ({ setResults }) => {
 
 
 
-  //     const [fixedMenu, setFixedMenu] = useState(false)
-
-  //     function handleFixedMenu(){
-
-  //      setFixedMenu(window.scrollY > 200)
-  //     }
-  //     window.addEventListener('scroll', handleFixedMenu)
-  //  return()=>window.removeEventListener('scroll', handleFixedMenu)
+  
 
   // for tab
 

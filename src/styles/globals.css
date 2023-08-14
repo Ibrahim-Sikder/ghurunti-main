@@ -39,6 +39,7 @@ table {
   border-right: 1px solid #ddd;
   text-align: center;
   font-size: 13px;
+  border-bottom:1px solid #4AB449;
 }
 .table :where(td):nth-last-of-type() {
   border-bottom: 3px solid #ddd !important;

@@ -284,34 +284,6 @@
     color: black !important;
   }
 }
-@media only screen and (max-width: 450px) {
-  .navigationMOb {
-    height: 55px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .searchResult{
@@ -801,11 +773,12 @@ font-size:14px;
 }
 .lastChild{
   margin-left: 113px;
+
 }
- 
 
-
-
+.date{
+  border-right:1px solid #fff !important;
+}
   
   .oneWayPackage, .roundTripWrap, .groupFlight {
     display: block;
@@ -819,9 +792,6 @@ font-size:14px;
   width: 90%;
   margin: 0 auto;
 }
-.package, .package2, .package3, .package4 {
-  height: 54px;
-}
 
 .package input, .package3 input, .package2 input, .package4 input, .packageDate input {
   width: 98%;
@@ -829,7 +799,6 @@ font-size:14px;
 .departDate, .package4 {
   width: 90%;
   margin: 0 auto;
-  height: 55px;
 }
 .oneWayPackage, .roundTripWrap, .groupFlight {
   margin-bottom:0px;
@@ -840,7 +809,6 @@ font-size:14px;
 .package, .package2, .package3, .package4 {
   width: 90%;
   margin: 5px auto;
-  height: 54px;
 }
 
   .bestPlaceHead {

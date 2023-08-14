@@ -29,6 +29,8 @@ import {
   AccessAlarm,
 } from "@mui/icons-material";
 import { FaFighterJet } from "react-icons/fa";
+import dynamic from "next/dynamic";
+
 
 const FlightSearch = () => {
   const images = [
@@ -43,7 +45,7 @@ const FlightSearch = () => {
     },
   ];
   return (
-    <div>
+    <div className={style.flightSearchWrap}>
       <div className={style.searchDetailHead}>
         <div>
           <div className="flex items-center justify-center">
@@ -633,4 +635,4 @@ const FlightSearch = () => {
   );
 };
 
-export default FlightSearch;
+export default dynamic(() => Promise.resolve(FlightSearch), { ssr: false });

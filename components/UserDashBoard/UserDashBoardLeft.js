@@ -171,7 +171,7 @@ const UserDashBoardLeft = () => {
                 <Link href='/dashboard/transactions'><div className={`${style.toolTip} ${style.toolTip3}`}>Transactions</div> </Link>
               </p>
               <p className={style.showToolTip}><FaAmazonPay className={style.icon} />
-                <Link href='/'><div className={`${style.toolTip} ${style.toolTip4}`}>Payment </div> </Link>
+                <Link href='/dashboard/payment'><div className={`${style.toolTip} ${style.toolTip4}`}>Payment </div> </Link>
               </p>
               <p className={style.showToolTip}><FaHospitalUser className={style.icon} />
                 <Link href='/dashboard/banklist'><div className={`${style.toolTip} ${style.toolTip5}`}>Bank List</div> </Link>
