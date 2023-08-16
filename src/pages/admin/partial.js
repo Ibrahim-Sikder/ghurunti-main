@@ -1,25 +1,21 @@
 import React from 'react';
-import Image from 'next/image'
-import logo from '../../../public/logo.png'
 import style from '../../../components/UserDashBoard/UserDashBoard.module.css'
-import { FaSistrix, FaCalendarAlt, FaAngleRight, FaCommentAlt, FaHeadSideCoughSlash, FaUserCircle, FaEllipsisV } from 'react-icons/fa';
-import UserDashBoardLeft from '../../../components/UserDashBoard/UserDashBoardLeft';
 import styles from './profile.module.css'
-import { FaAngleLeft } from "react-icons/fa";
-import RightSideTopBar from '../../../components/UserDashBoard/RightSideTopBar';
 import MoveText from '../../../components/UserDashBoard/MoveText/MoveText';
+import RightSideTopBar from '../../../components/SuperAdmin/RightSideTopBar';
+import UserDashBoardLeft from '../../../components/SuperAdmin/UserDashBoardLeft';
 const partial = () => {
      return (
           <div>
 
                <div className={style.sideBarWrap}>
                     <div className={style.leftSideBar}>
-                         <UserDashBoardLeft />
+                         <UserDashBoardLeft/>
                     </div>
                     <div className={style.partialInfo}>
                          <div>
                               <div className={styles.profileTop}>
-                                   <RightSideTopBar />
+                                   <RightSideTopBar/>
                                    <MoveText/>
                                    <div className={styles.flightHistory}>
                                         <div className="overflow-x-auto ">

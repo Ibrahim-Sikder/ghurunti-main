@@ -1,26 +1,21 @@
 import React from 'react';
-import Image from 'next/image'
-import logo from '../../../public/logo.png'
 import style from '../../../components/UserDashBoard/UserDashBoard.module.css'
-import { FaSistrix, FaCalendarAlt, FaAngleRight, FaCommentAlt, FaHeadSideCoughSlash, FaUserCircle, FaEllipsisV } from 'react-icons/fa';
-import UserDashBoardLeft from '../../../components/UserDashBoard/UserDashBoardLeft';
 import styles from './profile.module.css'
-import { FaAngleLeft } from "react-icons/fa";
-import Link from 'next/link';
 import styling from '../../../components/UserDashBoard/UserDashBoard.module.css';
-import RightSideTopBar from '../../../components/UserDashBoard/RightSideTopBar';
 import dynamic from "next/dynamic";
 import MoveText from '../../../components/UserDashBoard/MoveText/MoveText';
+import RightSideTopBar from '../../../components/SuperAdmin/RightSideTopBar';
+import UserDashBoardLeft from '../../../components/UserDashBoard/UserDashBoardLeft';
 const company = () => {
      return (
           <div>
 
                <div className={styling.sideBarWrap}>
                     <div className={styling.leftSideBar}>
-                         <UserDashBoardLeft />
+                         <UserDashBoardLeft/>
                     </div>
                     <div className={styles.companyInfo}>
-                         <RightSideTopBar />
+                         <RightSideTopBar/>
                         <MoveText/>
                          <div className='mt-5 '>
                               <div className={styles.profileTop}>

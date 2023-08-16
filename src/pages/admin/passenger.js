@@ -1,10 +1,10 @@
 import React from 'react';
 import style from '../../../components/UserDashBoard/UserDashBoard.module.css'
-import UserDashBoardLeft from '../../../components/UserDashBoard/UserDashBoardLeft';
 import styles from './profile.module.css'
-import RightSideTopBar from '../../../components/UserDashBoard/RightSideTopBar';
 import dynamic from "next/dynamic";
 import MoveText from '../../../components/UserDashBoard/MoveText/MoveText';
+import RightSideTopBar from '../../../components/SuperAdmin/RightSideTopBar';
+import UserDashBoardLeft from '../../../components/SuperAdmin/UserDashBoardLeft';
 const passenger = () => {
      return (
           <div>

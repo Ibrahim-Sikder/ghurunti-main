@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
-import styles from './UserDashBoard.module.css'
+import styles from '../../components/UserDashBoard/UserDashBoard.module.css'
+
+import MoveText from "../UserDashBoard/MoveText/MoveText";
 import TourDestination from "../Tour/TourDestination";
-import RightSideTopBar from "./RightSideTopBar";
 import HeroBox from "./HeroBox";
-import MoveText from "./MoveText/MoveText";
+import RightSideTopBar from "./RightSideTopBar";
+
 
 
 
@@ -17,7 +19,7 @@ const UserDashBoardRight = () => {
         <MoveText/>
       </div>
     
-    <HeroBox/>
+    <HeroBox></HeroBox>
       <div className={styles.packageTour}>
         <TourDestination />
       </div>

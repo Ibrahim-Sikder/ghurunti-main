@@ -1,25 +1,21 @@
 import React from 'react';
-import Image from 'next/image'
-import logo from '../../../public/logo.png'
 import style from '../../../components/UserDashBoard/UserDashBoard.module.css'
-import { FaSistrix, FaAngleRight, FaCommentAlt, FaHeadSideCoughSlash, FaUserCircle, FaEllipsisV } from 'react-icons/fa';
-import UserDashBoardLeft from '../../../components/UserDashBoard/UserDashBoardLeft';
 import styles from './profile.module.css'
-import { FaAngleLeft } from "react-icons/fa";
-import RightSideTopBar from '../../../components/UserDashBoard/RightSideTopBar';
 import dynamic from "next/dynamic";
 import MoveText from '../../../components/UserDashBoard/MoveText/MoveText';
+import RightSideTopBar from '../../../components/SuperAdmin/RightSideTopBar';
+import UserDashBoardLeft from '../../../components/SuperAdmin/UserDashBoardLeft';
 const payment = () => {
      return (
           <div>
                <div className={style.sideBarWrap}>
                     <div className={style.leftSideBar}>
-                         <UserDashBoardLeft />
+                         <UserDashBoardLeft/>
                     </div>
                     <div className={styles.paymentInfo}>
                          <div>
                               <div className={styles.profileTop}>
-                                   <RightSideTopBar />
+                                   <RightSideTopBar/>
                                  <MoveText/>
                                    <div className="mt-5">
                                         <div className={styles.flightHistory}>
