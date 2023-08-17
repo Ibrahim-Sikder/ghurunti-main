@@ -45,7 +45,7 @@ const HotelHeroBox = () => {
             </div>
           </div>
         </div>
-        <Link href="/b2bsearch/hotelSearch">
+        <Link href="/admin/hotelSearch">
           <button className={style.heroBoxBtn}>Get Your Hotel</button>
         </Link>
 

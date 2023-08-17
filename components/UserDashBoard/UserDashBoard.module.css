@@ -86,9 +86,10 @@
 }
 
 /* admin dashboard right side styling  */
-.flightRightSide{
+.flightRightSide, .hotelSearchRightSideBara{
   width:100% !important;
 }
+
 .profileTop {
   width: 100%;
   position:relative;

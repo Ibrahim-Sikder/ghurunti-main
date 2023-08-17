@@ -13,7 +13,7 @@ const Hotel = () => {
         <div className={style.leftSideBar}>
           <UserDashBoardLeft/>
         </div>
-        <div className={style.rightSideBar}>
+        <div className={style.hotelSearchRightSideBara}>
          <div className={style.rightSideWrap}>
          <div className={style.profileTop}>
           <RightSideTopBar/>

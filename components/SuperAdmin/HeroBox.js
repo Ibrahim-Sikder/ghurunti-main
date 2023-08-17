@@ -1247,7 +1247,7 @@ const HeroBox = () => {
           </Box>
         </div>
         <div className={style.btnWrap}>
-          <Link href='/b2bsearch'>
+          <Link href='/admin/flightsearch'>
             <button className={`${style.heroBoxBtn} ${styles.searchBtn}`}>Get Your Flight</button>
           </Link>
         </div>
