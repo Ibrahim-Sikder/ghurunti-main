@@ -326,107 +326,6 @@ const Banner = ({ setResults }) => {
 
 
       <div className={style.bannerWrap}>
-
-        {/* for transparent navbar  */}
-
-        {/* <div className={style.navigationMain}>
-        <div className={style.navigationContent}>
-          <div className={style.navigationLeft}>
-            <Image
-              src={Logo}
-              alt="Picture of the author"
-              width={50}
-              height={50}
-              className={style.logo}
-            />
-            <Link
-              href="/aboutUs"
-              style={{ textDecoration: "none", color: "black" }}
-            >
-              <p>About Us</p>
-            </Link>
-          </div>
-          <div className={style.inputDiv}>
-            <input type="text" placeholder="Search Flight, Hotal, Visa" />
-            <div className={style.inputIcon}></div>
-          </div>
-          <div className={style.inputButtons}>
-            <Link
-              href="/login"
-              className={style.logInButton}
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              Log In
-            </Link>
-            <Link
-              href="/signup"
-              className={style.signUpButtonTwo}
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              Sign Up
-            </Link>
-          </div>
-        </div>
-      </div>
-      {mobActive === 0 ? (
-        <div className={style.navigationMOb}>
-          <Image
-            src={Logo}
-            alt="Picture of the author"
-            width={50}
-            height={50}
-            className={style.mobLogo}
-          />
-          <div className={style.iconsMobNav}>
-            <FlightTakeoffIcon
-              className={style.takeOf}
-              onClick={() => setMobActive(1)}
-            />
-          </div>
-        </div>
-      ) : (
-        <div className={style.activeNavMob}>
-          <div className={style.iconsMobNav}>
-            <FlightLandIcon
-              className={style.landOf}
-              onClick={() => setMobActive(0)}
-            />
-          </div>
-          <Link
-            href="/aboutUs"
-            style={{ textDecoration: "none", color: "black" }}
-          >
-            <p>About Us</p>
-          </Link>
-          <div className={style.inputDivMOb}>
-            <input type="text" placeholder="Search Flight, Hotal, Visa" />
-            <div className={style.inputIcon}></div>
-          </div>
-          <div className={style.inputButtons}>
-            <Link
-              href="/login"
-              className={style.logInButton}
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              Log In
-            </Link>
-            <Link
-              href="/signup"
-              className={style.signUpButtonTwo}
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              Sign Up
-            </Link>
-          </div>
-        </div>
-      )} */}
-
-
-
-
-
-
-
         <h2>Welcome to Ghuronti! Find Tours, Flights & Hotels Packages</h2>
         <div className={style.heroBoxMain}>
 
@@ -764,7 +663,7 @@ const Banner = ({ setResults }) => {
                           <div className='flex justify-between'>
                             <div>
                               <h4>Passengers & {child + infant + adult} Person</h4>
-                              <small>{classes}</small>
+                              <span>{classes}</span>
                             </div>
                             <Groups2 onClick={() => window.my_modal_3.showModal()} className={style.showModalIcon} />
                           </div>
@@ -923,8 +822,8 @@ const Banner = ({ setResults }) => {
                           className={style.package4}>
                           <div className='flex justify-between'>
                             <div>
-                              <small>{child + infant + adult} Person</small> <br />
-                              <h4>Passengers & Cabin Class</h4>
+                              <span>Passenger & {child + infant + adult} Person</span> <br />
+                              <span>{classes}</span>
                             </div>
                             <Groups2 onClick={() => window.my_modal_3.showModal()} className={style.showModalIcon} />
                           </div>
@@ -996,15 +895,24 @@ const Banner = ({ setResults }) => {
                             </div>
 
                             <div className={style.classType}>
-                              <p>Cabin class</p>
-                              <p>Premium Economy</p>
-                              <p>Business class</p>
-                              <p>First class</p>
+
+                              <select onChange={(e) => {
+                                const classes = e.target.value;
+                                setClasses(classes)
+
+                              }}>
+                                <option value="Premium" selected>Cabin Class</option>
+                                <option value="Premium Econom">Premium Economy</option>
+                                <option value="Economy class">Economy class</option>
+                                <option value="Business class">Business class</option>
+                                <option value="First class">First class</option>
+                              </select>
                             </div>
                           </div>
                         </form>
                       </dialog>
                     </div>
+
                   </div>
                 </div>
               </CustomTabPanel>

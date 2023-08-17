@@ -100,6 +100,9 @@
     padding: 15px 20px;
     background:#fff;
 }
+.hotelRightSideBar{
+  width:100%;
+}
 .adminRightTopBara{
   width: 100%;
   display: flex;
@@ -161,6 +164,11 @@
   display: block;
   margin: 5px 0px;
   font-size: 11px !important;
+}
+.adminLeftInfo {
+  display: flex;
+  width: 32%;
+  justify-content: space-between;
 }
 .logoWrap {
   width: 200px;

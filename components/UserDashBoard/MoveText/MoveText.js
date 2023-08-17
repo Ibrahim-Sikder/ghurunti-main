@@ -5,7 +5,7 @@ const MoveText = () => {
         <div className={style.moveText}>
         <marquee
           onmouseout="this.start()"
-          onmouseover="this.stop();" behavior="scroll" direction="left"> <h2 className="text-xl font-bold">Ghuronti is your best partner for your journey ! Reserver your best hotel.</h2></marquee>
+          onmouseover="this.stop();" behavior="scroll" direction="left"> <h2 className="text-xl font-bold">Ghuronti is your best partner for your journey !</h2></marquee>
       </div>
     );
 };

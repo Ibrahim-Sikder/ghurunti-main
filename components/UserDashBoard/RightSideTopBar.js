@@ -21,6 +21,7 @@ const RightSideTopBar = () => {
           </div>
         </div>
         <div className={style.logoWrap}>
+          
           <Link href='/admin'>
             <Image
               src={logo}

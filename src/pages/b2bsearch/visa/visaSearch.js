@@ -22,6 +22,7 @@ import { CheckCircle } from '@mui/icons-material';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import TextField from '@mui/material/TextField';
+import MoveText from "../../../../components/UserDashBoard/MoveText/MoveText";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -56,6 +57,7 @@ const rows = [
 
 
 const VisaSearch = () => {
+  const [showDetail, setShowDetail] = useState(true)
   const [profession, setProfession] = useState('')
   const [loader, setLoader] = useState(false);
   const downloadPDF = () => {
@@ -73,6 +75,10 @@ const VisaSearch = () => {
   }
 
 
+  const handleShowDetail = () => {
+    setShowDetail(showDetail => !showDetail)
+  }
+
   return (
     <div>
       <div className={style.sideBarWrap}>
@@ -83,18 +89,14 @@ const VisaSearch = () => {
           <div className={style.rightSideWrap}>
             <div className={style.profileTop}>
               <RightSideTopBar />
-              <div className={style.moveText}>
-                <marquee
-                  onmouseout="this.start()"
-                  onmouseover="this.stop();" behavior="scroll" direction="left"> <h2 className="text-xl font-bold">Ghuronti is your best partner for your journey.</h2></marquee>
-              </div>
+             <MoveText/>
             </div>
             <div className={styling.visa}>
               <div className={styling.visaType}>
                 <div>
-                  <h4 className="text-white text-2xl ">Required Documents for Malaysia Tourist Visa</h4>
-                  <p className="text-white mb-5 mt-3">Visa Type : Studnet Visa</p>
-                  <p className="text-white font-bold text-xl ">Duration and Cost Details</p>
+                  <h4 className=" text-2xl ">Required Documents for Malaysia Tourist Visa</h4>
+                  <p className=" mb-5 mt-3">Visa Type : Studnet Visa</p>
+                  <p className=" font-bold text-xl ">Duration and Cost Details</p>
                 </div>
 
 
@@ -137,6 +139,7 @@ const VisaSearch = () => {
                   <span>Processing Time</span>
                   <span>Interview</span>
                   <span>Cost</span>
+                  <span >View Details</span>
                 </div>
 
                 <div className={styling.coastHalf}>
@@ -146,108 +149,41 @@ const VisaSearch = () => {
                   <span>5 Working Day </span>
                   <span>Embassies should  catch the call </span>
                   <span>3888 BDT </span>
+                  <span><small className={styling.showDetailBtn} onClick={handleShowDetail}>Show</small></span>
                 </div>
+                
               </div>
               <div className={styling.pricInfo}>
 
 
-                <div className="mb-5">
-                  <Accordion>
-                    <AccordionSummary>
-                      <Typography><button className={styling.showBtn}>Show Details</button></Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                      <Typography>
-                        <h3 className="text-white text-xl ">Depends on embassy</h3>
-                        <p className="text-white mb-3">Price Break Down</p>
-                        <div>
-                          <TableContainer component={Paper}>
-                            <Table sx={{ minWidth: 700 }} aria-label="customized table">
-                              <TableHead >
-                                <TableRow>
-                                  <StyledTableCell className={styling.priceInfoHead}>Embassy Fee </StyledTableCell>
-                                  <StyledTableCell className={styling.priceInfoHead} align="right">Agent Fee </StyledTableCell>
-                                  <StyledTableCell className={styling.priceInfoHead} align="right">Agency Fee </StyledTableCell>
-                                  <StyledTableCell className={styling.priceInfoHead} align="right">Service Charge </StyledTableCell>
-                                  <StyledTableCell className={styling.priceInfoHead} align="right">Total </StyledTableCell>
-                                </TableRow>
-                              </TableHead>
-                              <TableBody>
-                                {rows.map((row) => (
-                                  <StyledTableRow key={row.name}>
-                                    <StyledTableCell component="th" scope="row">
-                                      {row.name}
-                                    </StyledTableCell>
-                                    <StyledTableCell align="right">{row.calories}</StyledTableCell>
-                                    <StyledTableCell align="right">{row.fat}</StyledTableCell>
-                                    <StyledTableCell align="right">{row.carbs}</StyledTableCell>
-                                    <StyledTableCell align="right">{row.protein}</StyledTableCell>
-                                  </StyledTableRow>
-                                ))}
-                              </TableBody>
-                            </Table>
-                          </TableContainer>
-                        </div>
-                      </Typography>
-                    </AccordionDetails>
-                  </Accordion>
-                </div>
-                <div className="mb-5">
-
-                  <div className={styling.coastHalf}>
-                    <span>Single</span>
-                    <span>04 Months</span>
-                    <span>10 Days </span>
-                    <span>5 Working Day </span>
-                    <span>Embassies should  catch the call </span>
-                    <span>3888 BDT </span>
+                <div className={showDetail ? 'translate-y-0 bg-red-600 opacity-0 h-[0px] transition' : `${styling.allCoasInfo}`}>
+                  <div>
+                    <h2 className="text-white">Depends on embassy</h2>
+                    <h3 className="text-xl mb-5 text-white">Price Break Down</h3>
                   </div>
-                  <Accordion>
-
-                    <AccordionSummary>
-                      <Typography><button className={styling.showBtn}>Show Details</button></Typography>
-                    </AccordionSummary>
-
-                    <AccordionDetails>
-                      <Typography>
-                        <h3 className="text-white text-xl ">Depends on embassy</h3>
-                        <p className="text-white mb-3">Price Break Down</p>
-                        <div>
-                          <TableContainer component={Paper}>
-                            <Table sx={{ minWidth: 700 }} aria-label="customized table">
-                              <TableHead >
-                                <TableRow>
-                                  <StyledTableCell className={styling.priceInfoHead}>Embassy Fee </StyledTableCell>
-                                  <StyledTableCell className={styling.priceInfoHead} align="right">Agent Fee </StyledTableCell>
-                                  <StyledTableCell className={styling.priceInfoHead} align="right">Agency Fee </StyledTableCell>
-                                  <StyledTableCell className={styling.priceInfoHead} align="right">Service Charge </StyledTableCell>
-                                  <StyledTableCell className={styling.priceInfoHead} align="right">Total </StyledTableCell>
-                                </TableRow>
-                              </TableHead>
-                              <TableBody>
-                                {rows.map((row) => (
-                                  <StyledTableRow key={row.name}>
-                                    <StyledTableCell component="th" scope="row">
-                                      {row.name}
-                                    </StyledTableCell>
-                                    <StyledTableCell align="right">{row.calories}</StyledTableCell>
-                                    <StyledTableCell align="right">{row.fat}</StyledTableCell>
-                                    <StyledTableCell align="right">{row.carbs}</StyledTableCell>
-                                    <StyledTableCell align="right">{row.protein}</StyledTableCell>
-                                  </StyledTableRow>
-                                ))}
-                              </TableBody>
-                            </Table>
-                          </TableContainer>
-                        </div>
-                      </Typography>
-                    </AccordionDetails>
-                  </Accordion>
+                  <table>
+                      <tr>
+                        <th>Embassy Fee</th>
+                        <th>Agent Fee</th>
+                        <th>Agency Fee</th>
+                        <th>Service Charge </th>
+                        <th>Total</th>
+                      </tr>
+                    <tbody>
+                      <tr>
+                        <td>467 BDT</td>
+                        <td>2345 BDT</td>
+                        <td>789 BDT</td>
+                        <td>588 BDT</td>
+                        <td>9899 BDT</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-
+               
               </div>
               <div className={styling.priceInfo}>
-                <h4 className="text-white">Select Your Profession:</h4>
+                <h4 className="text-black">Select Your Profession:</h4>
                 <div>
                   <select
                     className={styling.professionType}
@@ -257,15 +193,15 @@ const VisaSearch = () => {
 
                     }}
                   >
-                    <option value="Premium" selected>Business Man</option>
-                    <option value="Premium Econom">Job Holder</option>
-                    <option value="Economy class">Student </option>
-                    <option value="Business class">Non Student </option>
-                    <option value="First class">Govt Job Holder</option>
-                    <option value="First class">Doctor</option>
-                    <option value="First class">Advocate Lawyer</option>
-                    <option value="First class">House Wife </option>
-                    <option value="First class">Unemployment </option>
+                    <option value="Business Man" selected>Business Man</option>
+                    <option value="Job Holder">Job Holder</option>
+                    <option value="Student">Student </option>
+                    <option value="Non Studnet">Non Student </option>
+                    <option value="Govt Job Holder">Govt Job Holder</option>
+                    <option value="Doctor">Doctor</option>
+                    <option value="Advocate Lawyer">Advocate Lawyer</option>
+                    <option value="House Wife">House Wife </option>
+                    <option value="Unemployment">Unemployment </option>
                   </select>
 
 
@@ -274,7 +210,7 @@ const VisaSearch = () => {
 
               </div>
               <div>
-                <p className="text-white text-xl mt-2 mb-5 ">{profession}</p>
+                <p className="text-[#06671D] text-2xl mt-2 mb-5 ">{profession}</p>
               </div>
               <div className={styling.visaRule}>
                 <ul>

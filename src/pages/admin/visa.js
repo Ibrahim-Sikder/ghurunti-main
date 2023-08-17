@@ -4,10 +4,10 @@ import Countries from "../../../components/Countries/Countries";
 import Passion from "../../../components/Passion/Passion";
 import Travel from "../../../components/Travel/Travel";
 import dynamic from "next/dynamic";
-import MoveText from "../../../components/UserDashBoard/MoveText/MoveText";
 import VisaHeroBox from "../../../components/SuperAdmin/VisaHeroBox";
 import RightSideTopBar from "../../../components/SuperAdmin/RightSideTopBar";
 import UserDashBoardLeft from "../../../components/SuperAdmin/UserDashBoardLeft";
+import MoveText from "../../../components/UserDashBoard/MoveText/MoveText";
 
 
 const Visa = () => {
@@ -21,7 +21,7 @@ const Visa = () => {
           <div className={style.rightSideWrap}>
           <div className={style.profileTop}>
             <RightSideTopBar/>
-            <MoveText/>
+          
           </div>
           <VisaHeroBox />
           <div className="mt-10">

@@ -62,6 +62,10 @@ table {
 .vertical-timeline::before {
   background: #4ab449 !important;
 }
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #fff !important;
+  background: #19ABE3 !important;
+}
 
 .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
   background: #e9f6e9;
